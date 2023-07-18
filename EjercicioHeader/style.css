@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: steelblue;
+    padding-top: 2.5rem; /* Dejar un espacio */
+}
+
+header {
+    height: 200px; /* El rectangulo donde va todo */
+    background-color: #333;
+    display: flex; /* Para que la imagen y sus elementos cambien su forma (de vertical a horizontal o al reves */
+    justify-content: space-between; /* Para que se genere el espacio entre ellos */
+    align-items: center; /* Para que la imagen se centre y no esté en su por defecto STRETCH */
+}
+
+ul {
+    list-style: none; /* Sacar el estilo de la lista, osea los puntos */
+    padding: 0; /* Estos dos son solo para resetear estilos del navegador */
+    margin: 0;
+    display: flex; /* Para que los items se pongan en horizontal */
+   /* align-self: flex-end; /* Para que los items al final del eje principal */
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+ul li {
+    background: #eee;
+    color: #333;
+    border-radius: 5px;
+    margin-left: 0.8rem; /* El espacio entre ellos hacia la izquierda */
+    font-size: 1.6rem;
+    padding: 0.9rem; /* Para darle relleno de los 4 lados */
+    line-height: 1.3; /* establece la altura de una casilla remarcada por líneas. Comúnmente se usa para establecer la distancia entre líneas de texto.  */
+}
+
+.logo {
+    border-radius: 50%;
+    /*margin-right: auto; Hacer esto es lo mismo que poner space-between pq calcula todo el espacio disponible y lo usa como margen */
+}
+
+footer {
+    text-align: center;
+    font-size: 1.6rem;
+    padding-top: 3.0rem;
+}
